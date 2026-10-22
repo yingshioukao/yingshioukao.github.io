@@ -2,45 +2,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ellen Ying-Shiou Kao | Academic Website</title>
+  <meta name="description" content="Ellen (Ying-Shiou) Kao — political scientist researching democratic accountability, parliaments, political behavior and civil society.">
+  <title>Ellen Kao | Political Scientist</title>
   <style>
-    body {
-      font-family: Georgia, serif;
-      max-width: 850px;
-      margin: 70px auto;
-      padding: 0 24px;
-      line-height: 1.7;
-      color: #283447;
-    }
-    h1 { font-size: 42px; margin-bottom: 0; }
-    h2 { margin-top: 40px; }
-    .subtitle { color: #687386; }
+    :root { --ink:#243348; --muted:#627083; --line:#e2e7ed; --accent:#315d80; --paper:#fff; --light:#f7f9fb; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.7; }
+    a { color:var(--accent); text-decoration-thickness:1px; text-underline-offset:3px; }
+    a:hover { color:#183e5b; }
+    .wrap { max-width: 960px; margin: auto; padding: 0 26px; }
+    header { border-bottom:1px solid var(--line); background:#fff; }
+    .nav { display:flex; justify-content:space-between; align-items:center; gap:18px; padding-top:20px; padding-bottom:20px; }
+    .brand { font-family:Georgia,serif; font-size:1.35rem; font-weight:700; color:var(--ink); text-decoration:none; }
+    nav { display:flex; flex-wrap:wrap; gap: 9px 22px; font-size:.91rem; }
+    nav a { color:var(--muted); text-decoration:none; }
+    nav a:hover { color:var(--accent); }
+    main { padding-top:70px; padding-bottom:75px; }
+    h1,h2 { font-family:Georgia,"Times New Roman",serif; line-height:1.22; letter-spacing:-.025em; }
+    h1 { font-size:clamp(2.8rem,6vw,4.1rem); margin:0 0 8px; }
+    h2 { font-size:1.85rem; margin:0 0 18px; }
+    h3 { font-size:1.08rem; margin:0 0 7px; }
+    p { margin:0 0 15px; }
+    .eyebrow { text-transform:uppercase; letter-spacing:.14em; font-size:.74rem; font-weight:700; color:var(--accent); margin-bottom:12px; }
+    .formal { color:var(--muted); font-size:.98rem; }
+    .tagline { font-size:1.12rem; font-weight:550; margin:18px 0 16px; }
+    .intro { max-width:720px; font-size:1.06rem; }
+    .links { display:flex; flex-wrap:wrap; gap:12px 24px; margin-top:23px; font-size:.93rem; }
+    section { padding-top:53px; margin-top:53px; border-top:1px solid var(--line); scroll-margin-top:24px; }
+    .muted { color:var(--muted); }
+    .research-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:22px; }
+    .topic { padding:20px; border:1px solid var(--line); border-radius:9px; background:var(--light); }
+    .topic p { font-size:.92rem; color:var(--muted); margin:0; }
+    .entry { padding:0 0 19px; margin:0 0 19px; border-bottom:1px solid var(--line); }
+    .entry:last-child { border-bottom:0; margin-bottom:0; padding-bottom:0; }
+    .entry .type { font-size:.78rem; text-transform:uppercase; letter-spacing:.07em; color:var(--accent); font-weight:700; }
+    .year { font-size:.87rem; color:var(--muted); }
+    .note { border-left:3px solid #a0b5c6; padding:10px 15px; color:var(--muted); background:var(--light); font-size:.92rem; }
+    footer { border-top:1px solid var(--line); color:var(--muted); font-size:.84rem; padding:24px 0 35px; }
+    @media(max-width:650px) { .nav { align-items:flex-start; flex-direction:column; } main { padding-top:42px; } .research-grid {grid-template-columns:1fr;} section {padding-top:38px;margin-top:38px;} }
   </style>
 </head>
 <body>
-  <h1>Ellen Kao</h1>
-  <p class="subtitle">Ying-Shiou Kao, Ph.D.</p>
-  <p>Political Scientist | Democratic Accountability & Comparative Politics</p>
-
-  <h2>About Me</h2>
-  <p>
-    I am a political scientist interested in democratic
-    accountability, parliamentary institutions, political
-    behavior, and civil society, with a focus on Japan
-    and Taiwan.
-  </p>
-
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Parliamentary Politics and Accountability</li>
-    <li>Political Behavior and Representation</li>
-    <li>Civil Society and Democratic Governance</li>
-    <li>Japanese Politics</li>
-  </ul>
-
-  <h2>Contact</h2>
-  <p>Academic contact information coming soon.</p>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">Ellen Kao</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#news">News</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="top">
+    <div id="about">
+      <div class="eyebrow">Political Scientist</div>
+      <h1>Ellen Kao</h1>
+      <p class="formal">Ying-Shiou Kao, Ph.D.</p>
+      <p class="tagline">Democratic Accountability &amp; Comparative Politics</p>
+      <p class="intro">I study how democratic institutions, political actors, and civil society shape accountability and political representation, with a particular focus on Japan and Taiwan.</p>
+      <p class="intro muted">My research spans parliamentary institutions, political behavior, and civil society, combining comparative perspectives with empirical research.</p>
+      <div class="links"><a href="#research">Explore research →</a><a href="#publications">Publications →</a><a href="#contact">Get in touch →</a></div>
+    </div>
+    <section id="research">
+      <div class="eyebrow">Research agenda</div>
+      <h2>Research</h2>
+      <div class="research-grid">
+        <div class="topic"><h3>Parliamentary Accountability</h3><p>Legislative oversight, parliamentary institutions, and executive–legislative relations.</p></div>
+        <div class="topic"><h3>Political Behavior &amp; Representation</h3><p>Citizen evaluations of political actors, political participation, and representation.</p></div>
+        <div class="topic"><h3>Civil Society &amp; Democratic Governance</h3><p>Civic organizations, transparency, and democratic resilience.</p></div>
+        <div class="topic"><h3>Japanese &amp; Comparative Politics</h3><p>Japan and Taiwan in comparative perspective, with broader East Asian connections.</p></div>
+      </div>
+    </section>
+    <section id="publications">
+      <div class="eyebrow">Selected work</div>
+      <h2>Publications</h2>
+      <div class="entry">
+        <div class="type">Journal article · 2025</div>
+        <p><strong>“Resilience to Online Disinformation: The Role of CSOs.”</strong></p>
+        <p class="muted">Bejima &amp; Kao. <em>Polish Political Science Yearbook</em>, 54(3), 89–104.</p>
+      </div>
+      <p class="note">More publications and working papers will be added after bibliographic details are checked.</p>
+    </section>
+    <section id="news">
+      <div class="eyebrow">Selected activities</div>
+      <h2>News &amp; Activities</h2>
+      <div class="entry"><div class="year">September 2026</div><p>Presented research at the ECPR General Conference in Kraków, Poland.</p></div>
+      <div class="entry"><div class="year">August 2026</div><p>Participated in the European Association for Japanese Studies conference in Poznań, Poland.</p></div>
+    </section>
+    <section id="teaching">
+      <div class="eyebrow">Education</div>
+      <h2>Teaching</h2>
+      <p>Teaching interests include research methods, human rights and democracy, and Japanese government and politics.</p>
+    </section>
+    <section id="contact">
+      <div class="eyebrow">Connect</div>
+      <h2>Contact &amp; CV</h2>
+      <p>For research inquiries or collaboration, please use the contact details in my academic CV.</p>
+      <p class="note">Before sharing this website with fellowship committees, add a verified academic email address and a downloadable CV.</p>
+    </section>
+  </main>
+  <footer><div class="wrap">© 2026 Ellen (Ying-Shiou) Kao · Academic website</div></footer>
 </body>
 </html>
